@@ -1,0 +1,16 @@
+apiVesrion : V1
+kind : pod
+metadata : 
+  name: nginx-demo
+  labels:
+    app: nginx
+    env: prod
+spec:
+  containers:
+    - name: write
+      image: nginx:latest  
+
+    - name: nginx
+      image: nginx:latest 
+  ports: 
+    - containerPort: 80
